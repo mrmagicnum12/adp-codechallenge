@@ -1,4 +1,4 @@
-var employeeId, EmployeeDb;
+var employeeId, Employee;
 
 Employee = require('./Employee')
 
