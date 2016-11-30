@@ -1,4 +1,4 @@
-var app,bodyParser,cookieParser, config, express,http,morgan,router,serveStatic;
+var app,bodyParser,cookieParser, config, express,http,morgan,mongoose,router,serveStatic;
 
 
 //app configurations
@@ -11,13 +11,13 @@ http = require('http').Server(app);
 serveStatic = require('serve-static');
 
 //mongodb mongoose plugin module
-var mongoose = require('mongoose');
-var dbConnectionPool = {};
+mongoose = require('mongoose');
+
 //connect to main database
 mongoose.connect(`mongodb://${config.databaseServer}/${config.databaseName}`);
 mongoose.connection.on('error', console.error.bind(console, 'DB connection error:'));
 mongoose.connection.on('connected', function () {
-  console.log(`Mongoose connected to Ironmean DB on ip --> ${config.databaseServer}/${config.databaseName}`);
+  console.log(`Mongoose connected to Test DB on ip --> ${config.databaseServer}/${config.databaseName}`);
 });
 
 //apply secret to all routes
