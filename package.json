@@ -1,0 +1,25 @@
+{
+  "name": "AdpCodeChallenge",
+  "version": "1.0.0",
+  "description": "Employee info management code Challenge",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Anthony Buchanan",
+  "license": "private",
+  "dependencies": {
+    "angular": "^1.5",
+    "angular-animate": "^1.5",
+    "angular-material": "^1.1.1",
+    "angular-route": "^1.5",
+    "angular-resource": "^1.5",
+    "angular-messages": "^1.5",
+    "angular-aria": "^1.5",
+    "body-parser": "^1.15.2",
+    "browserify": "*",
+    "express": "^4.14.0",
+    "mongoose":"*"    
+  }
+}

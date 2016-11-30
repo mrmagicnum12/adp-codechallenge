@@ -1,0 +1,10 @@
+.authenticate {
+    position: absolute;
+    left: 37%;
+    top: 14em;
+    border: 1px solid black;
+    box-shadow: 1px 4px 4px;
+    width: 245px;
+    padding-top: 10px;
+    padding-left: 52px;
+}
